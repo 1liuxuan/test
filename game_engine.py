@@ -29,10 +29,8 @@ class GameEngine:
     # FIXME: 实验一：智能代码补全测试
     def change_direction(self, new_direction):
         """改变蛇的移动方向（防止直接反向移动）"""
-        # 防止直接反向移动（例如从左直接向右）
         if (new_direction[0] * -1, new_direction[1] * -1) != self.direction:
             self.direction = new_direction
-    
     
     def update(self):
         """更新游戏状态：移动蛇，检查碰撞，吃食物"""
