@@ -1,9 +1,6 @@
 import pytest
 from game_engine import GameEngine
 
-import sys
-sys.path.append('..')
-
 # 初始化测试
 def test_initialization():
     engine = GameEngine()
